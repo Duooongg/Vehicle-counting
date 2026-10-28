@@ -75,6 +75,7 @@ pip install -r requirements.txt
 
 ## Project Structure
 
+<<<<<<< HEAD
 ```
 vehicle_counting/
 ├── app/                  # Main application code
@@ -98,11 +99,59 @@ vehicle_counting/
 ```
 
 ## License
+=======
+POST /api/v1/camera/stop: Dừng luồng camera.
+
+GET /api/v1/test-detection: Endpoint thử nghiệm để kiểm tra dịch vụ nhận diện.
+
+WebSocket Endpoints
+/api/v1/webcam-stream: Kết nối WebSocket phục vụ nhận diện trực tiếp từ Webcam.
+
+/api/v1/live-stats: Kết nối WebSocket cập nhật biến động số liệu đếm theo thời gian thực.
+
+🧩 Các thành phần chính 
+Detection Service: Sử dụng YOLOv8 để phát hiện các phương tiện trong từng khung hình.
+
+Tracking Service: Sử dụng DeepSORT để định danh và theo dõi hành trình xe qua các khung hình liên tiếp.
+
+Counting Service: Phân tích hành trình của xe để thực hiện đếm khi xe vượt qua các đường ranh giới đã thiết lập.
+
+Video Processing Service: Tích hợp các dịch vụ Nhận diện, Theo dõi và Đếm vào quy trình xử lý video hoàn chỉnh.
+
+📁 Cấu trúc thư mục dự án
+Plaintext
+vehicle_counting/
+├── app/                  # Mã nguồn chính của ứng dụng
+│   ├── api/              # Định nghĩa các tuyến đường (routes) và endpoints API
+│   ├── core/             # Cấu hình cốt lõi của ứng dụng
+│   ├── models/           # Định nghĩa các mô hình dữ liệu và schemas
+│   ├── services/         # Chứa logic xử lý nghiệp vụ (Business logic)
+│   └── utils/            # Các hàm tiện ích hỗ trợ
+├── configs/              # Các file cấu hình hệ thống
+├── data/                 # Thư mục lưu trữ dữ liệu
+│   ├── outputs/          # Video kết quả sau khi xử lý
+│   ├── uploads/          # Thư mục tạm chứa video người dùng tải lên
+│   └── videos/           # Các video mẫu phục vụ thử nghiệm
+├── logs/                 # Nhật ký hoạt động của ứng dụng (System logs)
+├── scripts/              # Các kịch bản/script tiện ích
+├── static/               # Các file giao diện web tĩnh
+│   └── index.html        # Giao diện người dùng trên web
+├── tests/                # Các bài kiểm thử tự động (Test cases)
+├── requirements.txt      # Danh sách các thư viện phụ thuộc
+└── start.sh              # Script khởi chạy ứng dụng nhanh
+
+🙏 Tham khảo 
+YOLOv8 — Mô hình nhận diện đối tượng.
+>>>>>>> 87f20c264a2610aff1ca3f8d56ce991ae6885a39
 
 MIT
 
+<<<<<<< HEAD
 ## Acknowledgements
 
 - [YOLOv8](https://github.com/ultralytics/ultralytics) for object detection
 - [DeepSORT](https://github.com/levan92/deep_sort_realtime) for object tracking
 - [FastAPI](https://fastapi.tiangolo.com/) for the web server framework
+=======
+FastAPI — Framework web server hiệu năng cao cho Python.
+>>>>>>> 87f20c264a2610aff1ca3f8d56ce991ae6885a39
