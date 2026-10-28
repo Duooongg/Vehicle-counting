@@ -77,7 +77,7 @@ WebSocket Endpoints
 
 /api/v1/live-stats: Kết nối WebSocket cập nhật biến động số liệu đếm theo thời gian thực.
 
-🧩 Các thành phần chính (Components)
+🧩 Các thành phần chính 
 Detection Service: Sử dụng YOLOv8 để phát hiện các phương tiện trong từng khung hình.
 
 Tracking Service: Sử dụng DeepSORT để định danh và theo dõi hành trình xe qua các khung hình liên tiếp.
@@ -107,10 +107,8 @@ vehicle_counting/
 ├── tests/                # Các bài kiểm thử tự động (Test cases)
 ├── requirements.txt      # Danh sách các thư viện phụ thuộc
 └── start.sh              # Script khởi chạy ứng dụng nhanh
-📜 Giấy phép (License)
-Dự án được phân phối theo giấy phép MIT License.
 
-🙏 Tham khảo (Acknowledgements)
+🙏 Tham khảo 
 YOLOv8 — Mô hình nhận diện đối tượng.
 
 DeepSORT — Thuật toán theo dõi đối tượng theo thời gian thực.
